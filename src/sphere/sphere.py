@@ -1,6 +1,29 @@
 import math, pickle
 
 class Sphere(object):
+    """
+    Sphere with associated geometrical properties.
+
+    ...
+
+    Attributes
+    ----------
+    radius : float
+        Radius of the sphere.
+
+    Methods
+    -------
+    __str__()
+        String representation of a sphere.
+    surface()
+        Compute the surface of a sphere.
+    volume()
+        Compute the volume of a sphere.
+    diameter()
+        Compute the diameter of a sphere.
+    dump(filename)
+        Dump the sphere in an output file.
+    """
 
     def __init__(self, radius):
         """Initialisation of a sphere with a given `radius`.
