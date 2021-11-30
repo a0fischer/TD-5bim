@@ -1,4 +1,4 @@
-import math, pickle
+import math, pickle, doctest
 
 class Sphere(object):
     """
@@ -176,3 +176,6 @@ def loadSphere(filename):
         sphere = pickle.load(f)
         return sphere
     pass
+
+if __name__ == "__main__":
+    doctest.testmod(verbose=True)
