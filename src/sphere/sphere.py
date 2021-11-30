@@ -71,6 +71,13 @@ class Sphere(object):
         The surface of a sphere is computed using this equation:
 
         .. math:: 4 * \pi * `radius`^2
+        
+        >>> surface(Sphere(10)) == (4.0*3.1416*100) 
+        TRUE
+        >>> surface(Sphere(0)) == 0
+        TRUE
+        >>> surface(Sphere(100)) == (4.0*3.1416*100*100) 
+        TRUE
         """
         return 4.0 * 3.1416 * self.radius ** 2
         pass
@@ -92,6 +99,13 @@ class Sphere(object):
         The volume of a sphere is computed using this equation:
 
         .. math:: \frac{4}{3} * \pi * `radius`^3
+        
+        >>> volume(Sphere(10)) == (4/3*3.1416*10*10*10) 
+        TRUE
+        >>> volume(Sphere(0)) == 0
+        TRUE
+        >>> volume(Sphere(100)) == (4/3*3.1416*100*100*100) 
+        TRUE
         """
         return 4/3 * 3.1416 * self.radius ** 3
         pass
@@ -113,6 +127,13 @@ class Sphere(object):
         The surface of a sphere is computed using this equation:
 
         .. math:: 2 * `radius`
+        
+        >>> volume(Sphere(10)) == (2*10) 
+        TRUE
+        >>> volume(Sphere(0)) == 0
+        TRUE
+        >>> volume(Sphere(100)) == (2*100) 
+        TRUE
         """
         return self.radius ** 2
         pass
@@ -128,6 +149,11 @@ class Sphere(object):
         Returns
         -------
         None
+        
+        >>> a = Sphere(10)
+        >>> a.dump("test_dumb")
+        >>> loadSphere("test_dumb") == a
+        TRUE
         """
         with open(filename, "w") as f:
             pickle.dump(self, f)
