@@ -70,7 +70,7 @@ class Sphere(object):
         -----
         The surface of a sphere is computed using this equation:
 
-        .. math:: `4 * \pi * radius^2
+        .. math:: 4 * \pi * `radius`^2
         """
         return 4.0 * 3.1416 * self.radius ** 2
         pass
@@ -91,7 +91,7 @@ class Sphere(object):
         -----
         The volume of a sphere is computed using this equation:
 
-        .. math:: `\frac{4}{3} * \pi * radius^3`
+        .. math:: \frac{4}{3} * \pi * `radius`^3
         """
         return 4/3 * 3.1416 * self.radius ** 3
         pass
@@ -112,7 +112,7 @@ class Sphere(object):
         -----
         The surface of a sphere is computed using this equation:
 
-        .. math:: `2 * radius`
+        .. math:: 2 * `radius`
         """
         return self.radius ** 2
         pass
