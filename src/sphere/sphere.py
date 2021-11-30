@@ -70,7 +70,7 @@ class Sphere(object):
         -----
         The surface of a sphere is computed using this equation:
 
-        .. math:: `4 * \pi * radius²`
+        .. math:: `4 * \pi * radius^2
         """
         return 4.0 * 3.1416 * self.radius ** 2
         pass
