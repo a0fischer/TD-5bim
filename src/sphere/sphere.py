@@ -42,6 +42,12 @@ class Sphere(object):
         -------
         float
             Surface of the sphere.
+            
+        Notes
+        -----
+        The surface of a sphere is computed using this equation:
+
+        .. math:: 4 * \pi * `radius`²
         """
         return 4.0 * 3.1416 * self.radius ** 2
         pass
@@ -57,6 +63,12 @@ class Sphere(object):
         -------
         float
             Volume of the sphere.
+        
+        Notes
+        -----
+        The volume of a sphere is computed using this equation:
+
+        .. math:: \frac{4}{3} * \pi * `radius`^3
         """
         return 4/3 * 3.1416 * self.radius ** 3
         pass
@@ -72,6 +84,12 @@ class Sphere(object):
         -------
         float
             Diameter of the sphere.
+        
+        Notes
+        -----
+        The surface of a sphere is computed using this equation:
+
+        .. math:: 2 * `radius`
         """
         return self.radius ** 2
         pass
