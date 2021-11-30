@@ -72,12 +72,12 @@ class Sphere(object):
 
         .. math:: 4 * \pi * `radius`^2
         
-        >>> Sphere(10).surface() == (4.0*3.1416*100) 
-        TRUE
+        >>> Sphere(10).surface() == (4.0*3.1416**2) 
+        True
         >>> Sphere(0).surface() == 0
-        TRUE
-        >>> Sphere(100).surface() == (4.0*3.1416*100*100) 
-        TRUE
+        True
+        >>> Sphere(100).surface() == (4.0*3.1416**2) 
+        True
         """
         return 4.0 * 3.1416 * self.radius ** 2
         pass
@@ -100,12 +100,12 @@ class Sphere(object):
 
         .. math:: \frac{4}{3} * \pi * `radius`^3
         
-        >>> Sphere(10).volume() == (4/3*3.1416*10*10*10) 
-        TRUE
+        >>> Sphere(10).volume() == (4/3*3.1416*10**3) 
+        True
         >>> Sphere(0).volume() == 0
-        TRUE
-        >>> Sphere(100).volume() == (4/3*3.1416*100*100*100) 
-        TRUE
+        True
+        >>> Sphere(100).volume() == (4/3*3.1416*100**3) 
+        True
         """
         return 4/3 * 3.1416 * self.radius ** 3
         pass
@@ -129,13 +129,13 @@ class Sphere(object):
         .. math:: 2 * `radius`
         
         >>> Sphere(10).diameter() == (2*10) 
-        TRUE
+        True
         >>> Sphere(0).diameter() == 0
-        TRUE
+        True
         >>> Sphere(100).diameter() == (2*100) 
-        TRUE
+        True
         """
-        return self.radius ** 2
+        return self.radius * 2
         pass
 
     def dump(self, filename):
@@ -153,7 +153,7 @@ class Sphere(object):
         >>> a = Sphere(10)
         >>> a.dump("test_dumb")
         >>> loadSphere("test_dumb") == a
-        TRUE
+        True
         """
         with open(filename, "w") as f:
             pickle.dump(self, f)
