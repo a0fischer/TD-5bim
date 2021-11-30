@@ -72,11 +72,11 @@ class Sphere(object):
 
         .. math:: 4 * \pi * `radius`^2
         
-        >>> Sphere(10).surface() == (4.0*3.1416**2) 
+        >>> Sphere(10).surface() == (4.0*3.1416*10**2) 
         True
         >>> Sphere(0).surface() == 0
         True
-        >>> Sphere(100).surface() == (4.0*3.1416**2) 
+        >>> Sphere(100).surface() == (4.0*3.1416*100**2) 
         True
         """
         return 4.0 * 3.1416 * self.radius ** 2
@@ -149,11 +149,6 @@ class Sphere(object):
         Returns
         -------
         None
-        
-        >>> a = Sphere(10)
-        >>> a.dump("test_dumb")
-        >>> loadSphere("test_dumb") == a
-        True
         """
         with open(filename, "w") as f:
             pickle.dump(self, f)
