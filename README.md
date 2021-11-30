@@ -12,6 +12,18 @@ Simply, download this git repository.
 
 Unzip the tarball by using command: ```unzip tarball.zip```
 
+## How to use it ?
+
+Basic command is :```python2 runsphere.py radius```
+where you must write the radius you want for your sphere
+
+Then, there are multiple parameters that you can use for displaying different sphere properties : 
+- -v : display the volume
+- -s : display the surface
+- -d : display the diameter
+- --load : load a sphere from file
+- --save : save the sphere into a file
+
 ## Examples
 
 The command:
