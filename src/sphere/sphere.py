@@ -72,11 +72,11 @@ class Sphere(object):
 
         .. math:: 4 * \pi * `radius`^2
         
-        >>> surface(Sphere(10)) == (4.0*3.1416*100) 
+        >>> Sphere(10).surface() == (4.0*3.1416*100) 
         TRUE
-        >>> surface(Sphere(0)) == 0
+        >>> Sphere(0).surface() == 0
         TRUE
-        >>> surface(Sphere(100)) == (4.0*3.1416*100*100) 
+        >>> Sphere(100).surface() == (4.0*3.1416*100*100) 
         TRUE
         """
         return 4.0 * 3.1416 * self.radius ** 2
@@ -100,11 +100,11 @@ class Sphere(object):
 
         .. math:: \frac{4}{3} * \pi * `radius`^3
         
-        >>> volume(Sphere(10)) == (4/3*3.1416*10*10*10) 
+        >>> Sphere(10).volume() == (4/3*3.1416*10*10*10) 
         TRUE
-        >>> volume(Sphere(0)) == 0
+        >>> Sphere(0).volume() == 0
         TRUE
-        >>> volume(Sphere(100)) == (4/3*3.1416*100*100*100) 
+        >>> Sphere(100).volume() == (4/3*3.1416*100*100*100) 
         TRUE
         """
         return 4/3 * 3.1416 * self.radius ** 3
@@ -128,11 +128,11 @@ class Sphere(object):
 
         .. math:: 2 * `radius`
         
-        >>> volume(Sphere(10)) == (2*10) 
+        >>> Sphere(10).diameter() == (2*10) 
         TRUE
-        >>> volume(Sphere(0)) == 0
+        >>> Sphere(0).diameter() == 0
         TRUE
-        >>> volume(Sphere(100)) == (2*100) 
+        >>> Sphere(100).diameter() == (2*100) 
         TRUE
         """
         return self.radius ** 2
