@@ -1,0 +1,10 @@
+Introduction
+=====================================
+
+Td_sphere is a project made to build sphere just by specifying the radius wanted. Functions make it possible to display :
+
+* Volume of a sphere ;
+* Diameter of a sphere ;
+* Surface of a sphere.
+
+The script also enables to save a sphere in a specific file and inversely load a sphere from a certain file. 
