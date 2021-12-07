@@ -51,6 +51,10 @@ Will return:
   diameter is 100.0
 ```
 
+## Documentation
+
+Some documentation is available here : https://a0fischer.github.io/TD-5bim/
+
 ## Contributors
 
 Aurélie Fischer, Miléna Kaag, David Parsons
